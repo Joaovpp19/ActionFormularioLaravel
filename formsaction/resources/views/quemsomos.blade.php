@@ -11,8 +11,8 @@
         <h1>Quem Somos</h1>
         <p>Informações sobre a empresa.</p>
         <nav>
-            <a href="{{ route('home') }}">Home</a>
-            <a href="{{ route('quem-somos') }}">Quem Somos</a>
+            <a href="{{ route('principal') }}">Home</a>
+            <a href="{{ route('quemsomos') }}">Quem Somos</a>
             <a href="{{ route('contato') }}">Contato</a>
         </nav>
     </div>

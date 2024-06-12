@@ -7,10 +7,10 @@ Route::get('/', function () {
     return view('principal');
 })->name('principal');
 
-Route::get('/quem-somos', function () {
-    return view('quem-somos');
-})->name('quem-somos');
+Route::get('/quemsomos', function () {
+    return view('quemsomos');
+})->name('quemsomos');
 
 Route::get('/contato', [ContatoController::class, 'create'])->name('contato');
-Route::post('/contato', [ContatoController::class, 'store']);
+Route::post('/contato', [ContatoController::class, 'enviarContato'])->name('contato.enviar');
 

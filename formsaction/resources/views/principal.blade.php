@@ -96,7 +96,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item"><a class="nav-link" href="{{ route('principal') }}">Principal</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('quem-somos') }}">Quem Somos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('quemsomos') }}">Quem Somos</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('contato') }}">Contato</a></li>
                 </ul>
             </div>

@@ -11,11 +11,9 @@ class ContatoController extends Controller
         return view('contato');
     }
 
-    public function store(Request $request)
+    public function enviarcontato(Request $request)
     {
-        $dados = $request->all();
-        echo '<pre>';
-        var_dump($dados);
-        echo '</pre>';
+        $data = $request->all();
+        return view('contatoresult')->with('data', $data);
     }
 }
