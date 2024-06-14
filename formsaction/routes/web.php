@@ -12,5 +12,5 @@ Route::get('/quemsomos', function () {
 })->name('quemsomos');
 
 Route::get('/contato', [ContatoController::class, 'create'])->name('contato');
-Route::post('/contato', [ContatoController::class, 'enviarContato'])->name('contato.enviar');
+Route::post('/contato.result', [ContatoController::class, 'result'])->name('contato.result');
 

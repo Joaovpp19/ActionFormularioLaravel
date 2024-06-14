@@ -11,9 +11,9 @@ class ContatoController extends Controller
         return view('contato');
     }
 
-    public function enviarcontato(Request $request)
+     public function result(Request $request)
     {
-        $data = $request->all();
-        return view('contatoresult')->with('data', $data);
+        $data = $request->only(['nome', 'telefone', 'endereco', 'sexo']);
+        return view('contatoresult', ['data' => $data]);
     }
 }
